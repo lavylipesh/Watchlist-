@@ -3,8 +3,8 @@ from app import app
 
 @app.route('/')
 def index():
-    message ='Watchlist'
-    return render_template('index.html',message=message)
+    title ='Home-Watchlist'
+    return render_template('index.html',title=title)
 
 @app.route('/movie/<int:movie_id>')
 def movie(movie_id):
