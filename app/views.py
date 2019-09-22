@@ -3,7 +3,7 @@ from app import app
 
 @app.route('/')
 def index():
-    title ='Home-Watchlist'
+    title =''
     return render_template('index.html',title=title)
 
 @app.route('/movie/<int:movie_id>')
